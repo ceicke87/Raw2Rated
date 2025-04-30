@@ -103,6 +103,14 @@ def history():
     conn.close()
     return render_template("history.html", cards=cards)
 
-if __name__ == "__main__":
-    init_db()
-    app.run(debug=True)
+@@
+- if __name__ == "__main__":
+-     app.run(debug=True)
++ if __name__ == "__main__":
++     import os
++     # Get the PORT Render provides (default to 5000 locally)
++     port = int(os.environ.get("PORT", 5000))
++     # Listen on all interfaces so Render can route traffic in
++     app.run(host="0.0.0.0", port=port, debug=True)
+
+    
