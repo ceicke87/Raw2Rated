@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raw2Rated</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="assets/logo.png" alt="Raw2Rated Logo" class="logo" />
+    <h1>From Raw to Rated</h1>
+    <p class="subtitle">AI-powered card grading. Trusted. Fast. Transparent.</p>
+    <div class="buttons">
+      <a href="/submit" class="btn primary">Submit Your Card</a>
+      <a href="/verify" class="btn secondary">Verify a Grade</a>
+    </div>
+  </div>
+</body>
+</html>
